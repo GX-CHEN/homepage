@@ -1,7 +1,7 @@
 var w = 500;
 var h = 400;
 
-var circleWidth = 5;
+var circleWidth = 6;
 
 var palette = {
   lightgray: '#819090',
