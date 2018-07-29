@@ -60,7 +60,7 @@ var force = d3.layout
   .force()
   .nodes(nodes)
   .links([])
-  .gravity(0.3)
+  .gravity(0.2)
   .charge(-1000)
   .size([w, h]);
 
@@ -88,8 +88,10 @@ node
   })
   .attr('r', circleWidth)
   .attr('fill', function(d, i) {
-    if (i > 0) {
+    if (i > 2) {
       return palette.pink;
+    } else if (i > 0) {
+      return palette.green;
     } else {
       return palette.blue;
     }
