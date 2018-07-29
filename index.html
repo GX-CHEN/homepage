@@ -10,16 +10,20 @@
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+  <link rel="icon" sizes="192x192" href="asset/images/icons/icon-192x192.png">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="asset/images/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="asset/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="asset/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="asset/images/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="asset/images/icons/safari-pinned-tab.svg" color="#5bbad5">
 
   <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileImage" content="asset/images/icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#3372DF">
 
   <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
@@ -66,7 +70,7 @@
 
     <div class="demo-drawer mdl-layout__drawer">
       <header class="demo-drawer-header">
-        <img src="asset/img/me.jpg" class="demo-avatar">
+        <img src="asset/images/me.jpg" class="demo-avatar">
         <p class="name-text">Gongxia Chen</p>
       </header>
 
@@ -75,12 +79,12 @@
           <i class="material-icons">report</i>Experience</a>
         <a class="mdl-navigation__link" href="#skills">
           <i class="material-icons">flag</i>Skills</a>
-        <a class="mdl-navigation__link" href="#twist">
-          <i class="material-icons">code</i>Projects</a>
+        <a class="mdl-navigation__link" href="#portfolio">
+          <i class="material-icons">code</i>Portfolio</a>
         <a class="mdl-navigation__link" href="#twist" id="twist-link">
           <i class="material-icons">local_offer</i>Interests</a>
         <a class="mdl-navigation__link" href="mailto:chengongxia1990@gmail.com?Subject=Hello%20Gongxia" target="_top">
-          <i class="material-icons">people</i>Contact me</a>
+          <i class="material-icons">people</i>Email me</a>
         <div class="mdl-layout-spacer"></div>
         <span class="mdl-navigation__link" href="">
         </span>
@@ -94,14 +98,14 @@
         <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
           id="home">
           <div class="section__circle-container mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone centered">
-            <img src="asset/img/me.jpg" class="profile-avatar">
+            <img src="asset/images/me.jpg" class="profile-avatar">
           </div>
           <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
             <h5>Gongxia Chen</h5>
             <ul>
-              <li>Software Developer especially skilled in front-end (React, Redux, Responsive expert) </li>
-              <li>Create API using Java & Node.js. Favorite is Node, which used in personal projects.</li>
-              <li>Sufficient with MongoDB, from both developer and DBA perspective</li>
+              <li>Software Developer especially skilled in front-end (React/Redux, Responsive expert) </li>
+              <li>Build API using Java & Node.js. Favorite is Node, which used in personal projects</li>
+              <li>Proficient with NoSQL database MongoDB, from both developer and DBA aspects</li>
             </ul>
           </div>
           <div class="summary-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
@@ -116,7 +120,7 @@
 
         <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height">
           <div class="section__circle-container mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone centered">
-            <img src="asset/img/wustl.jpg" class="profile-avatar">
+            <img src="asset/images/wustl.jpg" class="profile-avatar">
           </div>
           <div class="section__text mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone">
             <h5>Education</h5>
@@ -132,7 +136,7 @@
 
         <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height">
           <div class="section__circle-container mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone centered">
-            <img src="asset/img/react-logo.png" class="profile-avatar">
+            <img src="asset/images/react-logo.png" class="profile-avatar">
           </div>
           <div class="section__text mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone">
             <h5>Current Work</h5>
@@ -168,8 +172,8 @@
         </div>
 
         <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
-          id="projects">
-          <div class="projects-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+          id="portfolio">
+          <div class="portfolio-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
             <h5 class="centered">Personal Projects</h5>
             <p>In my personal time, I often learn some new stuff. For example, in past year, I taught myself with Progressive
               Web App, MongoDB DBA, NodeJS etc. I use there knowledge to write some personal projects, originally as private
@@ -204,7 +208,8 @@
           </div>
         </div>
 
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid mdl-grid-min-height" style="overflow: auto;" id="twist-container">
+        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid mdl-grid-min-height" style="overflow: auto;"
+          id="twist-container">
           <div class="container">
             <div id="twist"></div>
           </div>

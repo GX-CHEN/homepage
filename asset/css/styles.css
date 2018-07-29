@@ -238,12 +238,12 @@ li > a {
   color: #555;
 }
 
-.projects-text,
+.portfolio-text,
 .skills-text {
   margin: 0 18%;
 }
 
-.projects-text a {
+.portfolio-text a {
   color: #1890ff !important;
 }
 

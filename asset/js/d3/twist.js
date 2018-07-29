@@ -25,7 +25,7 @@ var palette = {
 };
 
 var nodes = [
-  { name: 'Time After Work' },
+  { name: 'After Work' },
   { name: 'Dev Stuff', target: [0] },
   { name: 'Cool Stuff', target: [0] },
   { name: 'PWA', target: [1] },
@@ -133,7 +133,7 @@ node
     if (i > 0) {
       return '1em';
     } else {
-      return '1.8em';
+      return '1.2em';
     }
   });
 
