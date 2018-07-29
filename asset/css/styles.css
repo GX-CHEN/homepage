@@ -247,9 +247,16 @@ li > a {
   color: #1890ff !important;
 }
 
-#projects,
+#home,
+#portfolio,
 #skills {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.project-item {
+  border: 1px solid darkgray;
+  padding: 6px;
+  border-radius: 10px;
 }
 
 @media (max-width: 839px) {
