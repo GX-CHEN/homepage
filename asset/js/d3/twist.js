@@ -1,4 +1,4 @@
-var w = 500;
+var w = 600;
 var h = 400;
 
 var circleWidth = 6;
