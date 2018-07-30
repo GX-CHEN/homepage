@@ -242,6 +242,10 @@ li > a {
   margin: 0 18%;
 }
 
+.certifications-text {
+  margin: 0 22%;
+}
+
 #certifications a,
 .portfolio-text a,
 .email-link {
@@ -266,7 +270,8 @@ li > a {
   }
 
   .portfolio-text,
-  .skills-text {
+  .skills-text,
+  .certifications-text {
     margin: 0 8%;
   }
 
@@ -276,7 +281,7 @@ li > a {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 604px) {
   #certifications a {
     display: block;
     margin-bottom: 10px;
