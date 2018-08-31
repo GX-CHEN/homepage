@@ -36,10 +36,6 @@
   <meta name="msapplication-TileImage" content="asset/images/icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#3372DF">
 
-  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-  <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
     rel="stylesheet">
@@ -87,14 +83,14 @@
       <nav class="demo-navigation mdl-navigation">
         <a class="mdl-navigation__link" href="#home">
           <i class="material-icons">report</i>Summary</a>
-        <a class="mdl-navigation__link" href="#skills">
-          <i class="material-icons">flag</i>Dev Skills</a>
         <a class="mdl-navigation__link" href="#portfolio">
           <i class="material-icons">code</i>Portfolio</a>
-        <a class="mdl-navigation__link" href="#certifications">
-          <i class="material-icons">book</i>Certifications</a>
+        <a class="mdl-navigation__link" href="#skills">
+          <i class="material-icons">flag</i>Dev Skills</a>
         <a class="mdl-navigation__link" href="#twist" id="twist-link">
           <i class="material-icons">local_offer</i>Life After Work</a>
+        <a class="mdl-navigation__link" href="#certifications">
+          <i class="material-icons">book</i>Certifications</a>
         <a class="mdl-navigation__link email-link" href="mailto:chengongxia1990@gmail.com?Subject=Hello%20Gongxia" target="_top">
           <i class="material-icons">email</i>Email me</a>
         <div class="mdl-layout-spacer"></div>
@@ -114,18 +110,61 @@
           </div>
           <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
             <h5>Gongxia Chen</h5>
+            <p>With Master degree in Computer Science, and solid skills from working as Software Engineer, I'm very confident
+              with my coding skills. I'm skilled and passionate about:
+            </p>
             <ul>
-              <li>Software Developer especially skilled in front-end (React/Redux, Responsive expert) </li>
-              <li>Build API using Java & Node.js. Favorite is Node, which used in personal projects</li>
+              <li>Develop complex front-end using modern frameworks (Responsive UI, React/Redux expert) </li>
+              <li>Build API using Java & NodeJS. Especially like NodeJS, which used in personal projects</li>
               <li>Proficient with NoSQL database MongoDB, from both developer and DBA aspects</li>
             </ul>
           </div>
-          <div class="summary-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-            <p>With Master degree in Computer Science, and solid skills from working as Software Engineer, I'm very confident
-              with my coding skills. I'm skilled and passionate about: developing complex web front-end using ES6 with modern
-              frameworks like React & Redux (also familiar with Progressive Web Apps); building RESTful APIs following Test-Driven
-              process (Java, Node & MongoDB); creating UI animation with semantic HTML5, CSS3 and responsive frameworks (Bootstrap,
-              Ant Design).
+        </div>
+
+        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+          id="portfolio">
+          <div class="portfolio-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+            <h5 class="centered">Portfolio</h5>
+            <p>In my personal time, I often learn some new stuff. For example, in past year, I taught myself with Progressive
+              Web App, MongoDB DBA, NodeJS etc. I use there knowledge to write some personal projects, originally as private
+              repo in Bitbucket, and recently move them to open repo in Github:
+              <a href="https://github.com/GX-CHEN" target="_blank">Github @GX-CHEN</a>
+            </p>
+            <p class="project-item">
+              <b>ITSTIME</b>
+              <a href="https://github.com/GX-CHEN/itstime" target="_blank">itstime Github project</a> (with detail features
+              in README)
+              <br/>An web application to manage daily plan and schedule (with pre-populated recommended schedules). Support
+              for view on mobile, and export with app icon on phone screens.
+              <br/>Demo website:
+              <a href="https://itstime.mobi" target="_blank">itstime.mobi</a> Demo Account: test/test. You can also register
+              an account, no email or any personal info are required.
+            </p>
+            <p class="project-item">
+              <b>Med Schedule</b>
+              <a href="https://github.com/GX-CHEN/med-schedule" target="_blank">med-schedule Github project</a> (with detail
+              features in README)
+
+              <br/> Responsive React Web App that record the medicine take schedule. Support English/Chinese, which can switch
+              in one click. Doctor and Patient role has different permission, hence see different pages & can access different
+              actions
+
+              <br/>Demo website:
+              <a href="https://biteapie.com" target="_blank">https://biteapie.com</a> Doctor Account: doctor/doctor; Patient
+              Account: test/test.
+            </p>
+            <p class="project-item">
+              <b>Giphy Search (React/Redux boilerplate)</b>
+              <a href="https://github.com/GX-CHEN/react-redux-boilerplate" target="_blank">react-redux-boilerplate Github
+                project
+              </a>
+              <br/>Extracted from itstime project, this is a fully set-up boilerplate project which contains React (from
+              Facebook create-react-app), Redux, Router, Antd (UI lib), and devDependencies for linter, formatter and watcher.
+              <br/>Key advantages including: up-to-date npm packages, opinionated extensible file structure, demo with actual
+              backend API call
+
+              <br/>Demo website:
+              <a href="https://react-redux-boilerplate-giphy.herokuapp.com/" target="_blank">boilerplate demo</a>
             </p>
           </div>
         </div>
@@ -156,8 +195,8 @@
               <li>
                 <b>Ascentis</b>
               </li>
-              <li>Develop HCM Software</li>
               <li>Leading role in frontend</li>
+              <li>Skillful with SaaS dev</li>
             </ul>
           </div>
         </div>
@@ -183,85 +222,6 @@
           </div>
         </div>
 
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
-          id="portfolio">
-          <div class="portfolio-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-            <h5 class="centered">Portfolio</h5>
-            <p>In my personal time, I often learn some new stuff. For example, in past year, I taught myself with Progressive
-              Web App, MongoDB DBA, NodeJS etc. I use there knowledge to write some personal projects, originally as private
-              repo in Bitbucket, and recently move them to open repo in Github:
-              <a href="https://github.com/GX-CHEN" target="_blank">Github @GX-CHEN</a>
-            </p>
-            <p class="project-item">
-              First project,
-              <b>ITSTIME</b> is an web application to manage daily plan and schedule. Support for view on mobile, and export
-              with app icon on phone screens.
-              <br/> Github Project page:
-              <a href="https://github.com/GX-CHEN/itstime" target="_blank">itstime project</a> has screenshots in READEME
-              <br/>Demo website:
-              <a href="https://itstime.mobi" target="_blank">itstime.mobi</a> Demo Account: test/test. You can also register an account, no email or personal info are required.
-              Totally free and anonymous
-            </p>
-            <p class="project-item">
-              Second project,
-              <b>Med Schedule</b>
-              Responsive React Web App that record the medicine take schedule with English/Chinese support. Language switch in one click.
-              <br/> Github Project page:
-              <a href="https://github.com/GX-CHEN/med-schedule" target="_blank">med-schedule project</a> has screenshots and detail feature explanations in READEME
-              <br/>Demo website:
-              <a href="https://biteapie.com" target="_blank">https://biteapie.com</a> Doctor Account: doctor/doctor; Patient Account: test/test.
-              <br/>This domain name is funny :-) because it's only for demo instead of production environment, I just deployed
-              it to a domain that I own (instead of buy another domain). Notice these Doctor and Patient accounts has different
-              user permission, hence see different pages & has access different actions
-            </p>
-            <p class="project-item">
-              When I finished the first project, I actually extracted it as a boilerplate. Then use the boilerplate structure to work on
-              the second one. So the second one takes much less time to finish.
-              <br/> I also put the boilerplate code in my Github
-              <a href="https://github.com/GX-CHEN/react-redux-boilerplate" target="_blank">react-redux-boilerplate project</a>
-              <br/>It's deployed at a Heroku free account:
-              <a href="https://react-redux-boilerplate-giphy.herokuapp.com/" target="_blank">boilerplate demo</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
-          id="certifications">
-          <div class="certifications-text mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-            <h5 class="centered">Technical Certifications</h5>
-            <ul>
-              <li>
-                Oracle Certified Professional, Java SE 8 Programmer:
-                <a href="https://www.youracclaim.com/badges/a38a10af-c251-4a9c-9875-ced31eeba701/linked_in_profile" target="_blank">Certification Badge</a>
-              </li>
-              <li>
-                Oracle Certified Associate, Java SE 8 Programmer:
-                <a href="https://www.youracclaim.com/badges/467524a6-094a-4314-94c5-dda064f9c969" target="_blank">Certification Badge</a>
-              </li>
-              <li>
-                MongoDB Certified DBA Associate:
-                <a href="https://university.mongodb.com/certified_professional_finder/#name=gongxia&expertise=C100DBA" target="_blank">Certification Link</a>
-              </li>
-              <li>
-                MongoDB Certified Developer Associate:
-                <a href="https://university.mongodb.com/certified_professional_finder/#name=gongxia&expertise=C100DEV" target="_blank">Certification Link</a>
-              </li>
-              <li>
-                Microsoft 70-483: Programming in C#:
-                <a href="https://www.youracclaim.com/badges/9dcb1a93-9ff0-4586-95e1-bf646355b7af" target="_blank">Certification Badge</a>
-              </li>
-              <li>
-                Microsoft 70-480: Programming in HTML5 with JS & CSS3
-                <a href="https://www.youracclaim.com/badges/28ecc4da-60c5-4b36-b739-b8467f889052" target="_blank">Certification Badge</a>
-              </li>
-              <li>
-                Professional Scrum Master I from Scrum.org:
-                <a href="https://www.scrum.org/user/283293" target="_blank">Certification Badge</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
         <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid mdl-grid-min-height" style="overflow: auto;"
           id="twist-container">
           <div class="container">
@@ -270,6 +230,62 @@
             <div id="twist"></div>
           </div>
         </div>
+
+        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+          id="certifications">
+          <div class="certifications-text mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+            <h5 class="centered">Technical Certifications</h5>
+            <p>People have different opinions with programming certifications. In my opinion, certification itself proves
+              <b>NOTHING</b> at all, but the process of going through study-guide, systematically learning language/database
+              fundamentals is somehow useful to me (as a front-end developer to learn backend tools).</p>
+            <div class="certification-list">
+              <ul>
+                <li>
+                  Oracle Certified Professional, Java SE 8 Programmer:
+                  <a href="https://www.youracclaim.com/badges/a38a10af-c251-4a9c-9875-ced31eeba701/linked_in_profile" target="_blank">Certification
+                    Badge
+                  </a>
+                </li>
+                <li>
+                  Oracle Certified Associate, Java SE 8 Programmer:
+                  <a href="https://www.youracclaim.com/badges/467524a6-094a-4314-94c5-dda064f9c969" target="_blank">Certification
+                    Badge
+                  </a>
+                </li>
+                <li>
+                  MongoDB Certified DBA Associate:
+                  <a href="https://university.mongodb.com/certified_professional_finder/#name=gongxia&expertise=C100DBA" target="_blank">Certification
+                    Link
+                  </a>
+                </li>
+                <li>
+                  MongoDB Certified Developer Associate:
+                  <a href="https://university.mongodb.com/certified_professional_finder/#name=gongxia&expertise=C100DEV" target="_blank">Certification
+                    Link
+                  </a>
+                </li>
+                <li>
+                  Microsoft 70-483: Programming in C#:
+                  <a href="https://www.youracclaim.com/badges/9dcb1a93-9ff0-4586-95e1-bf646355b7af" target="_blank">Certification
+                    Badge
+                  </a>
+                </li>
+                <li>
+                  Microsoft 70-480: Programming in HTML5 with JS & CSS3
+                  <a href="https://www.youracclaim.com/badges/28ecc4da-60c5-4b36-b739-b8467f889052" target="_blank">Certification
+                    Badge
+                  </a>
+                </li>
+                <li>
+                  Professional Scrum Master I from Scrum.org:
+                  <a href="https://www.scrum.org/user/283293" target="_blank">Certification Badge</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
     </main>

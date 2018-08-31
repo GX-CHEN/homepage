@@ -243,7 +243,10 @@ li > a {
 }
 
 .certifications-text {
-  margin: 0 22%;
+  margin: 0 18%;
+}
+.certification-list {
+  margin: 10px 5%;
 }
 
 #certifications a,
