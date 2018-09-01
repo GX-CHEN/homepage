@@ -238,13 +238,11 @@ li > a {
 }
 
 .portfolio-text,
-.skills-text {
-  margin: 0 18%;
+.skills-text,
+.certifications-text {
+  margin: 0 16%;
 }
 
-.certifications-text {
-  margin: 0 18%;
-}
 .certification-list {
   margin: 10px 5%;
 }
@@ -263,8 +261,12 @@ li > a {
 
 .project-item {
   border: 1px solid darkgray;
-  padding: 6px;
+  padding: 10px;
   border-radius: 10px;
+}
+
+iframe {
+  margin-top: 10px;
 }
 
 @media (max-width: 839px) {
