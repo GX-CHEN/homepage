@@ -11,11 +11,11 @@ body {
 }
 
 .profile-avatar {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   border-radius: 100px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .centered {
