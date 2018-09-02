@@ -293,6 +293,10 @@ iframe {
   #twist-link {
     display: none !important;
   }
+
+  iframe {
+    display: none;
+  }
 }
 
 @media (max-width: 604px) {
