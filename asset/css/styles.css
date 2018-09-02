@@ -261,8 +261,8 @@ li > a {
 
 .project-item {
   border: 1px solid darkgray;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 5px;
 }
 
 iframe {
