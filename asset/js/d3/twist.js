@@ -29,12 +29,12 @@ var nodes = [
   { name: 'Dev Stuff', target: [0] },
   { name: 'Cool Stuff', target: [0] },
   { name: 'PWA', target: [1] },
-  { name: 'Make Boilerplate', target: [1] },
+  { name: 'Explore UI Trends', target: [1] },
   { name: 'Node & Mongo', target: [1] },
   { name: 'Nunchakus', target: [2] },
   { name: 'Yoyo-ball', target: [2] },
   { name: 'Enjoy Food', target: [2] },
-  { name: 'Hulu Netflix YouTube', target: [2] }
+  { name: 'YouTube Hulu Netflix', target: [2] }
 ];
 
 var links = [];

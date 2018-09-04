@@ -262,6 +262,12 @@ li > a {
   color: #1890ff !important;
 }
 
+.contact-link {
+  color: rgb(255,64,129);
+  font-weight: 500;
+  font-size: 15px;
+}
+
 #home,
 #portfolio,
 #skills {
