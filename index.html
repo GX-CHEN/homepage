@@ -1,262 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123049388-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123049388-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag('config', 'UA-123049388-1');
+    </script>
 
-    gtag('config', 'UA-123049388-1');
-  </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Gongxia Chen's homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gongxia Chen</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Gongxia Chen's homepage">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gongxia Chen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="asset/images/icons/icon-192x192.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="asset/css/styles.css" />
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Gongxia Chen">
-  <link rel="apple-touch-icon-precomposed" href="asset/images/icons/icon-192x192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="asset/images/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="asset/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="asset/images/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="asset/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- d3.js formating js -->
+    <link rel="stylesheet" href="asset/css/format.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="asset/images/icons/icon-144x144.png">
-  <meta name="msapplication-TileColor" content="#3372DF">
-
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <link rel="stylesheet" href="asset/css/styles.css">
-
-  <!-- d3.js formating js -->
-  <link rel="stylesheet" href="asset/css/format.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-</head>
-
-<body>
-  <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="demo-header mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Gongxia Chen</span>
-        <div class="mdl-layout-spacer"></div>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-          <i class="material-icons">more_vert</i>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-          <a class="mdl-menu__item contact-link" href="https://github.com/GX-CHEN" target="_blank">
-            Github
-          </a>
-          <a class="mdl-menu__item contact-link" href="https://www.linkedin.com/in/gongxia-chen-366b6640/" target="_blank">
-            LinkedIn
-          </a>
-          <a class="mdl-menu__item contact-link" href="mailto:chengongxia1990@gmail.com?Subject=Hello%20Gongxia" target="_top">
-            Email Me
-          </a>
-        </ul>
-      </div>
-    </header>
-
-    <div class="demo-drawer mdl-layout__drawer">
-      <header class="demo-drawer-header">
-        <img src="asset/images/me.jpg" class="demo-avatar">
-        <p class="name-text">Gongxia Chen</p>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Gongxia Chen</span>
+          <div class="mdl-layout-spacer"></div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <a class="mdl-menu__item contact-link" href="https://github.com/GX-CHEN" target="_blank"> Github </a>
+            <a
+              class="mdl-menu__item contact-link"
+              href="https://www.linkedin.com/in/gongxia-chen-366b6640/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            <a
+              class="mdl-menu__item contact-link"
+              href="mailto:chengongxia1990@gmail.com?Subject=Hello%20Gongxia"
+              target="_top"
+            >
+              Email Me
+            </a>
+          </ul>
+        </div>
       </header>
 
-      <nav class="demo-navigation mdl-navigation">
-        <a class="mdl-navigation__link" href="#home">
-          <i class="material-icons">report</i>Summary</a>
-        <a class="mdl-navigation__link" href="#portfolio">
-          <i class="material-icons">code</i>Portfolio</a>
-        <a class="mdl-navigation__link" href="#skills">
-          <i class="material-icons">flag</i>Dev Skills</a>
-        <a class="mdl-navigation__link" href="#after-work" id="after-work-link">
-          <i class="material-icons">local_offer</i>Life After Work</a>
-        <a class="mdl-navigation__link email-link" href="mailto:chengongxia1990@gmail.com?Subject=Hello%20Gongxia" target="_top">
-          <i class="material-icons">email</i>Email me</a>
-        <div class="mdl-layout-spacer"></div>
-        <span class="mdl-navigation__link" href="">
-        </span>
-      </nav>
-    </div>
+      <div class="demo-drawer mdl-layout__drawer">
+        <header class="demo-drawer-header">
+          <img src="asset/images/me.jpg" class="demo-avatar" />
+          <p class="name-text">Gongxia Chen</p>
+        </header>
 
-    <main ui-view="" class="mdl-layout__content mdl-color--grey-100 ng-scope">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" class="ng-scope"></script>
-
-      <div class="mdl-grid demo-content ng-scope">
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
-          id="home">
-          <div class="section__circle-container mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone centered">
-            <img src="asset/images/me.jpg" class="profile-avatar">
-          </div>
-          <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-            <h5>Gongxia Chen</h5>
-            <p>With Master degree in Computer Science, and solid skills from working as Software Engineer, I'm very confident
-              with my coding skills. Proficient and passionate about:
-            </p>
-            <ul>
-              <li>Develop complex front-end using modern frameworks (Responsive UI, React/Redux expert) </li>
-              <li>Build API using Java & NodeJS. Especially like NodeJS, which used in personal projects</li>
-              <li>Proficient with NoSQL database MongoDB, from both developer and DBA aspects</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
-          id="portfolio">
-          <div class="portfolio-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-            <h5 class="centered">Portfolio</h5>
-            <p>In personal time, I often learn new programming knowledge. For example, in past year, I taught myself with
-              Progressive Web App, MongoDB DBA skills, NodeJS etc. I use these knowledge in personal projects:
-              <a href="https://github.com/GX-CHEN" target="_blank">Github @GX-CHEN</a> Following are live demos of three
-              of my deployed projects.
-            </p>
-            <p class="project-item">
-              <b>ITSTIME</b>
-              <br/><a href="https://github.com/GX-CHEN/itstime" target="_blank">itstime Github project</a> (with detail features
-              in README)
-              <br/>An web application to help manage daily plan and schedule (with pre-populated recommended schedules).
-              Support mobile devices, and user can export as "App Icon" to phone screens (both iOS and Android).
-              <br/>Demo website:
-              <a href="https://itstime.life" target="_blank">itstime.life</a> Demo Account: test/test. You can also register
-              an account, no email or any personal info are required.
-              <br/>
-              <iframe width="560" height="430" src="https://www.youtube.com/embed/PR4XETuwFZ8" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </p>
-            <p class="project-item">
-              <b>JS Mastermind (JS tutorial)</b>
-              <br/><a href="https://github.com/GX-CHEN/js-mastermind" target="_blank">js-mastermind Github project</a> 
-              <br/>JavaScript language tutorial, which contains code snippets help to learn JS, and write JS in "JavaScriptic" flavor. 
-              Code runner is from repl.it embedded API, and UI is based on React Material-UI.
-              <br/>Demo website:
-              <a href="http://jsmastermind.com" target="_blank">jsmastermind.com</a>
-              <br/>
-              <iframe width="560" height="430" src="https://www.youtube.com/embed/TAvsb2FkPbw" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </p>
-            <p class="project-item">
-              <b>Med Record</b>
-              <br/><a href="https://github.com/GX-CHEN/med-record" target="_blank">Med Record Github project</a> (with detail
-              features in README)
-
-              <br/> Responsive React Web App that record the medicine taken status. Support English/Chinese, which can switch
-              with one click. Doctor and Patient role has different user permission, hence will see different pages & have
-              access different actions
-
-              <br/>Demo website:
-              <a href="https://themedrecord.com" target="_blank">https://themedrecord.com</a> Doctor Account: doctor/doctor; Patient
-              Account: test/test.
-              <br/>
-              <iframe width="560" height="430" src="https://www.youtube.com/embed/xdtlolshmIc" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </p>
-            <p class="project-item">
-              <b>Giphy Search (React/Redux boilerplate)</b>
-              <br/><a href="https://github.com/GX-CHEN/react-redux-boilerplate" target="_blank">react-redux-boilerplate Github
-                project
-              </a>
-              <br/>Extracted from "itstime" project, this is a fully set-up boilerplate project which contains React (from
-              Facebook create-react-app), Redux, Router, Antd (UI lib). Also includes dev tools for linting, formating &
-              hot reload.
-              <br/>Key advantages including: up-to-date npm packages, clear & extensible file structure, contains example
-              with actual API call
-
-              <br/>Demo website:
-              <a href="https://react-redux-boilerplate-giphy.herokuapp.com/" target="_blank">Giphy Search demo</a>
-              <br/>
-              <iframe width="560" height="430" src="https://www.youtube.com/embed/ZwCdY2dPlNU" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </p>
-          </div>
-        </div>
-
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height">
-          <div class="section__circle-container mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone centered">
-            <img src="asset/images/wustl.jpg" class="school-logo">
-          </div>
-          <div class="section__text mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone">
-            <h5>Education</h5>
-            <ul>
-              <li>
-                <b>Washington University</b>
-              </li>
-              <li>M.S. in Computer Science</li>
-              <li>B.S. in Systems Engineering</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height">
-          <div class="section__circle-container mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone centered">
-            <img src="asset/images/react-logo.png" class="work-logo">
-          </div>
-          <div class="section__text mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone">
-            <h5>Current Work</h5>
-            <ul>
-              <li>
-                <b>Ascentis</b>
-              </li>
-              <li>Leading role in frontend</li>
-              <li>Skilled with SaaS dev</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
-          id="skills">
-          <div class="skills-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-            <h5 class="centered">Development Skills</h5>
-            <ul>
-              <li>
-                <b>Programming:</b> Familiar with JavaScript (including ES6) and Java, using best practice of TDD and OOP</li>
-              <li>
-                <b>Frontend Frameworks:</b> PWA, React (with Redux), familiar with MVC and MVVM principles</li>
-              <li>
-                <b>Web UI Tools:</b> Familiar with semantic HTML5, CSS3, SCSS, Twitter Bootstrap, Ant Design</li>
-              <li>
-                <b>Backend Development:</b> Java (with Spring), NodeJS, MySQL, familiar with MongoDB</li>
-              <li>
-                <b>Collaboration Tools:</b> Familiar with Git, JIRA, Bitbucket (Stash), Confluence</li>
-              <li>
-                <b>Other Skills:</b> Strong understanding of Web Accessibility, Proficient with Test Automation</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid mdl-grid-min-height" style="overflow: auto;"
-          id="after-work">
-          <div class="container">
-            <h5 class="centered">Life After Work</h5>
-            <p class="centered">Fun note: Try select a node, click and drag it around</p>
-            <div id="twist"></div>
-          </div>
-        </div>
-
+        <nav class="demo-navigation mdl-navigation">
+          <a class="mdl-navigation__link" href="#home"> <i class="material-icons">report</i>Summary</a>
+          <a class="mdl-navigation__link" href="#portfolio"> <i class="material-icons">code</i>Portfolio</a>
+          <a class="mdl-navigation__link" href="#skills"> <i class="material-icons">flag</i>Dev Skills</a>
+          <a class="mdl-navigation__link" href="#after-work" id="after-work-link">
+            <i class="material-icons">local_offer</i>Life After Work</a
+          >
+          <a
+            class="mdl-navigation__link email-link"
+            href="mailto:chengongxia1990@gmail.com?Subject=Hello%20Gongxia"
+            target="_top"
+          >
+            <i class="material-icons">email</i>Email me</a
+          >
+          <div class="mdl-layout-spacer"></div>
+          <span class="mdl-navigation__link" href=""> </span>
+        </nav>
       </div>
 
-    </main>
+      <main ui-view="" class="mdl-layout__content mdl-color--grey-100 ng-scope">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" class="ng-scope"></script>
 
-    <!--     end of main div -->
-  </div>
-  <script src="asset/js/d3/tree.js"></script>
-  <script src="asset/js/d3/twist.js"></script>
-</body>
+        <div class="mdl-grid demo-content ng-scope">
+          <div
+            class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+            id="home"
+          >
+            <div
+              class="section__circle-container mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone centered"
+            >
+              <img src="asset/images/me.jpg" class="profile-avatar" />
+            </div>
+            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+              <h5>Gongxia Chen</h5>
+              <p>
+                With Master degree in Computer Science, and solid skills from working as Software Engineer, I'm very
+                confident with my coding skills. Proficient and passionate about:
+              </p>
+              <ul>
+                <li>Develop complex front-end using modern frameworks (Responsive UI, React/Redux expert)</li>
+                <li>Build API using Java & NodeJS. Especially like NodeJS, which used in personal projects</li>
+                <li>Proficient with NoSQL database MongoDB, from both developer and DBA aspects</li>
+              </ul>
+            </div>
+          </div>
 
+          <div
+            class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+            id="portfolio"
+          >
+            <div
+              class="portfolio-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone"
+            >
+              <h5 class="centered">Portfolio</h5>
+              <p>
+                In personal time, I often learn new programming knowledge. For example, in past year, I taught myself
+                with Progressive Web App, MongoDB DBA skills, NodeJS etc. I use these knowledge in personal projects:
+                <a href="https://github.com/GX-CHEN" target="_blank">Github @GX-CHEN</a> Following are live demos of
+                three of my deployed projects.
+              </p>
+              <p class="project-item">
+                <b>ITSTIME</b> <br /><a href="https://github.com/GX-CHEN/itstime" target="_blank"
+                  >itstime Github project</a
+                >
+                (with detail features in README) <br />An web application to help manage daily plan and schedule (with
+                pre-populated recommended schedules). Support mobile devices, and user can export as "App Icon" to phone
+                screens (both iOS and Android). <br />Demo website:
+                <a href="https://itstime.life" target="_blank">itstime.life</a> Demo Account: test/test. You can also
+                register an account, no email or any personal info are required. <br />
+                <iframe
+                  width="560"
+                  height="430"
+                  src="https://www.youtube.com/embed/PR4XETuwFZ8"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </p>
+              <p class="project-item">
+                <b>JS Mastermind (JS tutorial)</b> <br /><a
+                  href="https://github.com/GX-CHEN/js-mastermind"
+                  target="_blank"
+                  >js-mastermind Github project</a
+                >
+                <br />JavaScript language tutorial, which contains code snippets help to learn JS, and write JS in
+                "JavaScriptic" flavor. Code runner is from repl.it embedded API, and UI is based on React Material-UI.
+                <br />Demo website: <a href="http://jsmastermind.com" target="_blank">jsmastermind.com</a> <br />
+                <iframe
+                  width="560"
+                  height="430"
+                  src="https://www.youtube.com/embed/TAvsb2FkPbw"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </p>
+              <p class="project-item">
+                <b>Med Record</b> <br /><a href="https://github.com/GX-CHEN/med-record" target="_blank"
+                  >Med Record Github project</a
+                >
+                (with detail features in README)
+
+                <br />
+                Responsive React Web App that record the medicine taken status. Support English/Chinese, which can
+                switch with one click. Doctor and Patient role has different user permission, hence will see different
+                pages & have access different actions
+
+                <br />Demo website:
+                <a href="https://themedrecord.com" target="_blank">https://themedrecord.com</a> Doctor Account:
+                doctor/doctor; Patient Account: test/test. <br />
+                <iframe
+                  width="560"
+                  height="430"
+                  src="https://www.youtube.com/embed/xdtlolshmIc"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </p>
+              <p class="project-item">
+                <b>Giphy Search (React/Redux boilerplate)</b> <br /><a
+                  href="https://github.com/GX-CHEN/react-redux-boilerplate"
+                  target="_blank"
+                  >react-redux-boilerplate Github project
+                </a>
+                <br />Extracted from "itstime" project, this is a fully set-up boilerplate project which contains React
+                (from Facebook create-react-app), Redux, Router, Antd (UI lib). Also includes dev tools for linting,
+                formating & hot reload. <br />Key advantages including: up-to-date npm packages, clear & extensible file
+                structure, contains example with actual API call
+
+                <br />Demo website:
+                <a href="https://react-redux-boilerplate-giphy.herokuapp.com/" target="_blank">Giphy Search demo</a>
+                <br />
+                <iframe
+                  width="560"
+                  height="430"
+                  src="https://www.youtube.com/embed/ZwCdY2dPlNU"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+          >
+            <div class="section__circle-container mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone centered">
+              <img src="asset/images/wustl.jpg" class="school-logo" />
+            </div>
+            <div class="section__text mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone">
+              <h5>Education</h5>
+              <ul>
+                <li><b>Washington University</b></li>
+                <li>M.S. in Computer Science</li>
+                <li>B.S. in Systems Engineering</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+          >
+            <div class="section__circle-container mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone centered">
+              <img src="asset/images/react-logo.png" class="work-logo" />
+            </div>
+            <div class="section__text mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-phone">
+              <h5>Current Work</h5>
+              <ul>
+                <li><b>Ascentis</b></li>
+                <li>Leading role in frontend</li>
+                <li>Skilled with SaaS dev</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid-min-height"
+            id="skills"
+          >
+            <div class="skills-text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+              <h5 class="centered">Development Skills</h5>
+              <ul>
+                <li>
+                  <b>Programming:</b> Familiar with JavaScript (including ES6) and Java, using best practice of TDD and
+                  OOP
+                </li>
+                <li><b>Frontend Frameworks:</b> PWA, React (with Redux), familiar with MVC and MVVM principles</li>
+                <li><b>Web UI Tools:</b> Familiar with semantic HTML5, CSS3, SCSS, Twitter Bootstrap, Ant Design</li>
+                <li><b>Backend Development:</b> Java (with Spring), NodeJS, MySQL, familiar with MongoDB</li>
+                <li><b>Collaboration Tools:</b> Familiar with Git, JIRA, Bitbucket (Stash), Confluence</li>
+                <li><b>Other Skills:</b> Strong understanding of Web Accessibility, Proficient with Test Automation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid mdl-grid-min-height"
+            style="overflow: auto;"
+            id="after-work"
+          >
+            <div class="container">
+              <h5 class="centered">Life After Work</h5>
+              <p class="centered">Fun note: Try select a node, click and drag it around</p>
+              <div id="twist"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!--     end of main div -->
+    </div>
+    <script src="asset/js/d3/tree.js"></script>
+    <script src="asset/js/d3/twist.js"></script>
+  </body>
 </html>
