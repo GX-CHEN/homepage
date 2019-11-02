@@ -4,8 +4,7 @@ This website lists my skills, portfolio, experience etc.
 
 ## Deployed Website
 
-Main link: https://programalchemist.com
-Backup link: https://gx-chen.github.io/homepage
+Link: https://gx-chen.github.io/homepage
 
 ## Tech Stacks
 
